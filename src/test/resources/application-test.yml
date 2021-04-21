@@ -1,0 +1,15 @@
+spring:
+  application.name: treinamento-test
+  h2.console:
+    enabled: true
+    path: /h2-console
+  datasource:
+    username: sa
+    password:
+    platform: h2
+    url: jdbc:h2:mem:testedb
+  rabbitmq:
+    host: bolinha
+    port: 5672
+    username: guest
+    password: guest

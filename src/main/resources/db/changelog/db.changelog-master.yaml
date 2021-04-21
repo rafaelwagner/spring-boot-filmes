@@ -1,0 +1,7 @@
+databaseChangeLog:
+  - include:
+      file: db/changelog/db.changelog-001-create-table-filme.yaml
+  - include:
+      file: db/changelog/db.changelog-002-create-table-serie.yaml
+  - include:
+      file: db/changelog/db.changelog-003-insert-10-filmes.yaml

@@ -1,0 +1,43 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1
+      author: rafael.wagner
+      changes:
+        - createSequence:
+            incrementBy: 1
+            startValue: 1
+            sequenceName: filme_seq
+        - createTable:
+            tableName: filme
+            columns:
+              - column:
+                  name: id
+                  type: bigint
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: titulo
+                  type: varchar(255)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: sinopse
+                  type: varchar(2000)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: categoria
+                  type: varchar(20)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: status
+                  type: varchar(20)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: ano_lancamento
+                  type: bigint
+                  constraints:
+                    nullable: false

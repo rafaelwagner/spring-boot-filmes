@@ -1,0 +1,47 @@
+databaseChangeLog:
+  - changeSet:
+      id: 3
+      author: rafael.wagner
+      changes:
+        - insert:
+            tableName: filme
+            columns:
+              - column:
+                  name: id
+                  value: 1
+              - column:
+                  name: titulo
+                  value: 'Piratas do Caribe: A Maldição do Perola Negra'
+              - column:
+                  name: sinopse
+                  value: Sinopse do filme
+              - column:
+                  name: categoria
+                  value: AVENTURA
+              - column:
+                  name: status
+                  value: NAO_VI_AINDA
+              - column:
+                  name: ano_lancamento
+                  value: 2003
+        - insert:
+            tableName: filme
+            columns:
+              - column:
+                  name: id
+                  value: 2
+              - column:
+                  name: titulo
+                  value: 'E o Vento Levou'
+              - column:
+                  name: sinopse
+                  value: Sinopse do filme
+              - column:
+                  name: categoria
+                  value: ROMANCE
+              - column:
+                  name: status
+                  value: NAO_VI_AINDA
+              - column:
+                  name: ano_lancamento
+                  value: 1939
